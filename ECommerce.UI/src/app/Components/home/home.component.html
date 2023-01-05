@@ -1,0 +1,106 @@
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../../assets/images/ImgCarousel.webp" alt="Los Angeles" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/images/ImgCarousel2.webp" alt="Chicago" class="d-block">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+  <section class="mag-section">
+    <div class="mag-content">
+      <h2 class="font-wieght-bold">LUXE MAGAZINE</h2>
+      <small>
+      <p>A WORLD OF LUXURY AND INSPIRATION</p>
+      <u><a href="">READ LUXE MAGAZINE</a></u>
+      </small>
+  
+      <!-- Magazine card -->
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="../../../assets/images/Magazine-img-1.webp" alt="Card image cap">
+          <a href="">
+          <div class="card-body">
+            <h5 class="card-title">INSIDE LUXE</h5>
+            <p>Men's Capsule Wadrobe</p>          
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Read the Story</small>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../../../assets/images/Magazine-img-2.webp" alt="Card image cap">
+          <a href="">
+          <div class="card-body">
+            <h5 class="card-title">INSIDE LUXE</h5>
+            <p>Top Menswear Trend Fall 2023</p>          
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Read the Story</small>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../../../assets/images/Magazine-img-3.jpg" alt="Card image cap">
+          <a href="">
+          <div class="card-body">
+            <h5 class="card-title">INSIDE LUXE</h5>
+            <p>Women Fashion Autumn'23</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Read the Story</small>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Magazine card -->
+  </section>
+  <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+        <h5></h5>
+    </ng-template>
+    <ng-template let-product pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="p-mb-3">
+                </div>
+                <div>
+                    <img class="product-image" src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <h4 class="p-mb-1">{{product.name}}</h4>
+                    <h6 class="p-mt-0 p-mb-3">${{product.price}}</h6>
+                    <span [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                    <div class="car-buttons p-mt-5">
+                        <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
+                        <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star"></p-button>
+                        <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+  </p-carousel>
+  
+  

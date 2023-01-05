@@ -1,0 +1,63 @@
+.navbar{
+    text-decoration: black;
+}
+
+.nav-link{
+    font-size: larger;
+}
+.social-part .fa {
+    padding-right: 20px;
+}
+
+.social-part {
+    margin-left: auto;
+}
+
+ul li a {
+    margin-right: -5px;
+    margin-left: 13px;
+    
+}
+
+ul li a :hover {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.title-logo{
+    font-weight: 1000;
+}
+
+.input-group{
+    width: 26%;
+    margin-left: 23%;
+}
+
+.icons{
+    font-size: 160%;
+    margin: 7px 10px 5px 10px;
+    color: rgb(167, 164, 164);
+}
+
+.dropdown-menu.sm-menu {
+    min-height: 20rem;
+    min-width: 25rem;
+}
+
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item{
+    width: 0px;
+    background-color: white;
+}

@@ -1,0 +1,68 @@
+.d-block{
+    height: 50%;
+    width: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.mag-section{
+    background: #f4eddd;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.mag-content{
+    /* max-width: 927px;
+    min-width: 768px; */
+    margin-top: 10px;
+    padding:20px;
+}
+
+.card{
+    width: 15%;
+    margin: 10px 20px 10px 0px;
+}
+
+.card-deck{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card-footer{
+    background-color: white;
+    border-top:none;
+}
+
+.fa-arrow-right{
+    color: black;
+    font-size: small;
+    margin-left: 3px;
+}
+
+.product-item {
+    .product-item-content {
+        border: 1px solid var(--surface-d);
+        border-radius: 3px;
+        margin: .3rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .product-image {
+        width: 50%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+    }
+}
+
+.product-image{
+    height: min-content;
+    width: min-content;
+    margin-bottom: 10px;
+}
