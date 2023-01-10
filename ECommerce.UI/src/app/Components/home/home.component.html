@@ -89,18 +89,34 @@
                 </div>
                 <div>
                     <img class="product-image" src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
-                    <h4 class="p-mb-1">{{product.name}}</h4>
+                    <h6 class="p-mb-1">{{product.name}}</h6>
                     <h6 class="p-mt-0 p-mb-3">${{product.price}}</h6>
-                    <span [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                    <!-- <span [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span> -->
                     <div class="car-buttons p-mt-5">
-                        <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
-                        <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star"></p-button>
-                        <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+                        <a href=""><i class="pi pi-heart mr-2" style="font-size: 1.8rem"></i></a>
+                        <button pButton type="button"  class="p-button-outlined p-button-rounded">Buy</button>
                     </div>
                 </div>
             </div>
         </div>
     </ng-template>
   </p-carousel>
+  
+<div class="banner-container">
+    <div class="banner">
+        <div class="shoe">
+            <img src="../../../assets/images/shoe.png" alt="">
+        </div>
+        <div class="content">
+            <span>upto</span>
+            <h3>50% 0ff</h3>
+            <p>offer ends after 5 days</p>
+            <a href="#" class="btn">veiw offer</a>
+        </div>
+        <div class="women">
+            <img src="../../../assets/images/women.png" alt="">
+        </div>
+    </div>
+</div>
   
   

@@ -1,0 +1,37 @@
+
+.img-bg{
+    background-image: url(../../../../assets/images/mens-category.jfif);
+    height: 100%;  
+    background-size: cover;
+    border-radius: 42px;
+}
+
+.img-bg1{
+    background-image: url(../../../../assets/images/mens-category-footwear.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 42px;
+}
+
+.img-bg2{
+    background-image: url(../../../../assets/images/mens-category-accesories.jpg);
+    height: 100%;
+    margin-top: 10px;
+    background-size: cover;
+    border-radius: 42px;
+}
+
+.img-bg3{
+    background-image: url(../../../../assets/images/mens-category-luggage.jfif);
+    height: 100%;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 42px;
+}
+
+.category-text{
+    color:white;
+    text-decoration: none;
+}
