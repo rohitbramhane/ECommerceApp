@@ -17,6 +17,9 @@ import { ClothingComponent } from './Components/Categories/mens/clothing/clothin
 import { FootwearComponent } from './Components/Categories/mens/footwear/footwear.component';
 import { AccesoriesComponent } from './Components/Categories/mens/accesories/accesories.component';
 import { LuggageComponent } from './Components/Categories/mens/luggage/luggage.component';
+import { ProductContainerComponent } from './Components/product-container/product-container.component';
+import { ProductDetailsComponent } from './Components/product-details/product-details.component';
+import { ShoppingCartComponent } from './Components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { LuggageComponent } from './Components/Categories/mens/luggage/luggage.c
     ClothingComponent,
     FootwearComponent,
     AccesoriesComponent,
-    LuggageComponent
+    LuggageComponent,
+    ProductContainerComponent,
+    ProductDetailsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,

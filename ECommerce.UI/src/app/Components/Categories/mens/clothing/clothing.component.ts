@@ -10,6 +10,9 @@ export class ClothingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-
+   
+  
 }
+

@@ -1,0 +1,38 @@
+<div class="mx-auto border border-light">
+    <div class="row g-0">
+        <div class="col-4 d-flex justify-content-center">
+           <img src="../../../assets/images/product-1.jpg" alt="" class="mt-5 w-75 h-75">
+        </div>
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Header</h2>
+                </div>
+
+                <div class="card-body">
+                    <h1 class="card-title text-success">Final Price
+                    <span class="text-primary">-10%</span>
+                    </h1>
+                    <h4 class="card-subtitle text-danger text-decoration-line-through">Orignal Price</h4>
+                </div>
+
+                <div class="card-body">
+                    <h6 class="card-subtitle my-2 text-success">Available</h6>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-outline-success">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">Description</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action" *ngFor="let item of [1,1,1,1]">
+                            {{item}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row"></div>
+</div>
