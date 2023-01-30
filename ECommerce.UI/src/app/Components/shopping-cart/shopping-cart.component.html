@@ -1,1 +1,128 @@
-<p>shopping-cart works!</p>
+<!-- <div class="mx-auto border border-light">
+<div class="m-4 border my-rounded-corner">
+    <h3 class="w-25 m-4 border text-center py-2 rounded">Current Cart</h3>
+    <div class="mt-5">
+        <div class="d-grid w-50 mx-auto mb-3">
+            <button class="btn btn-outline-success fs-4" type="button">Order</button>
+        </div>
+    </div>
+    <table class="table w-50 mx-auto table-bordered table-hover shadow">
+        <tbody>
+            <tr>
+                <td>Total Items</td>
+                <td class="fs-5 fw-bold">5</td>
+            </tr>
+            <tr>
+                <td>Total Price</td>
+                <td class="fs-5 fw-bold text-danger">1,000</td>
+            </tr>
+            <tr>
+                <td>Discount</td>
+                <td class="fs-5 fw-bold text-success">200</td>
+            </tr>
+            <tr>
+                <td>You have to Pay</td>
+                <td class="fs-5 fw-bold text-success">10,000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div> -->
+
+<section class="h-100" style="background-color: #eee;">
+    <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-10">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+                    <div>
+                        <p class="mb-0"><span class="text-muted">Sort by :</span> <a href="#!"
+                                class="text-body text-decoration-none"> price <i class="fas fa-angle-down mt-1"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card rounded-3 mb-4" *ngFor="let item of [1,1,1,1]">
+                    <div class="card-body p-4">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 col-lg-2 col-xl-2">
+                                <img src="../../../assets/images/product-1.jpg" class="img-fluid rounded-3"
+                                    alt="Cotton T-shirt">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <p class="lead fw-normal mb-2">Basic T-shirt</p>
+                                <p><span class="text-muted">Size: </span>M <span class="text-muted">Color: </span>Grey
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                <button class="btn btn-link px-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+
+                                <input id="form1" min="0" name="quantity" value="0" type="number"
+                                    class="form-control form-control-sm" />
+
+                                <button class="btn btn-link px-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                <h5 class="mb-0">$499.00</h5>
+                            </div>
+                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header py-3">
+                        <h5 class="mb-0">Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                Products
+                                <span>$53.98</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                Shipping
+                                <span>Gratis</span>
+                            </li>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                <div>
+                                    <strong>Total amount</strong>
+                                    <strong>
+                                        <p class="mb-0">(including VAT)</p>
+                                    </strong>
+                                </div>
+                                <span><strong>$53.98</strong></span>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-outline-success btn-block btn-lg">Proceed to Pay</button>
+                    </div>
+                    <div class="m-3">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-arrow-left me-2 text-secondary"></i>
+                        <span class="text-muted">Back to shop</span>
+                        </a>
+                    </div>
+                    <!-- <div class="card-body p-4 d-flex flex-row">
+              <div class="form-outline flex-fill">
+                <input type="text" id="form1" class="form-control form-control-lg" />
+                <label class="form-label mt-3" for="form1">Discound code</label>
+              </div>
+              <button type="button" class="btn btn-apply btn-outline-info btn-md ms-3">Apply</button>
+            </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
